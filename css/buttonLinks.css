@@ -1,0 +1,29 @@
+.btn-container{
+    border:3px solid lightcyan;
+    width:700px;
+    height:600px;
+    margin:90px auto 50px auto;
+    background: lightcyan;
+    border-radius:15px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    text-align:center;
+}
+.btn-container .btn{
+    border:3px solid rgb(61, 62, 63);
+    width:300px;
+    height:50px;
+    margin:20px auto;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background: darkgray;
+    color: black;
+    font-weight:600;
+    font-size:20px;
+    text-decoration:underline;
+    border-radius: 15px;
+    -webkit-box-shadow: 11px 10px 17px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 10px 17px -4px rgba(0,0,0,0.75);
+    box-shadow: 11px 10px 17px -4px rgba(0,0,0,0.75);
+}

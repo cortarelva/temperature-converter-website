@@ -1,0 +1,31 @@
+.form-container{
+    border: 5px solid lightgrey;
+    border-radius:15px;
+    width:480px;
+    height:220px;
+    margin:50px auto;
+    background: lightsteelblue;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.input-container{
+    position:relative;
+    
+}
+.input-container .input-label{
+    display:inline-block;
+    margin:10px;
+    font-weight: 600;
+}
+.input-container .input{
+    width:80px;
+    
+}
+.output-label{
+    margin-left:10px;
+}
+
+.form-title{
+    text-align:center;
+}

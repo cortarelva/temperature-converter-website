@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Celsius to Fahrenheit Converter</title>
+  <meta name="description" content="The scientific definition of Celsius is now defined against degrees Kelvin.
+  The Fahrenheit temperature range is based on setting the freezing point of water at 32 degrees, 
+            and boiling to 212 degrees. This means that boiling and freezing point are 180 degrees apart.
+  ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+   rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/buttonLinks.css">
+  <link rel="stylesheet" href="css/converter.css">
+  <link rel="stylesheet" href="css/text-formula.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  
+<nav>
+  <ul class="nav">
+     <li><a href="index.html">Home</a></li> 
+    <li><a href="fahrenheittocelsius.html">Fahrenheit to Celsius</a></li>
+    <li><a href="fahrenheittokelvin.html">Fahrenheit to Kelvin</a></li>
+    <li><a href="kelvintofahrenheit.html">Kelvin to Fahrenheit</a></li>
+    <li><a href="kelvintocelsius.html">Kelvin to Celsius</a></li>
+    <li><a href="celsiustokelvin.html">Celsius to Kelvin</a></li>
+  </ul>
+</nav>
+
+<form class="form-container">
+        <h1 class="form-title">Celsius to Fahrenheit</h1>
+        <div class="input-container">
+            <p class="input-label">Celsius:</p>
+            <input class="input" id="inputCelsius" type="number"
+            oninput="temperatureConverterCtoF(this.value)" onChange="temperatureConverterCtoF(this.value)" 
+            placeholder="0"></input>
+        </div>
+        <h5 class="output-label">Fahrenheit: <span id="outputCFahrenheit"></span>ºF</h5>
+    </form>
+
+    <section class="text-formula-container">
+            <h1 class="text-formula-title">Definition of Fahrenheit and Celsius</h1>
+            <div class="text-format">
+            <p>
+            The <a>Celsius</a> scale is nowadays set in such a way that Zero degrees C is the temperature at which ice melts 
+            (note : not the temperature at which it freezes, which is different!) . At the other end of the scale, 100 degrees Celsius is the boiling point of water.<br/>
+            The scientific definition of Celsius is now defined against degrees Kelvin. Zero degrees Celsius is 273.15K. One degree Celsius is equal to one Kelvin, 
+            so we can say that the boiling point of water is equal to 273.15 + 100 = 373.15 Kelvin.<br/>
+            <br/>
+            In the <a>Fahrenheit</a> scale, water freezes at 32 degrees, and boils at 212 degrees.<br/>
+            Boiling and freezing point are therefore 180 degrees apart. Normal body temperature is considered to be 98.6 °F (in real-life it fluctuates around this value). 
+            Absolute zero is defined as -459.67°F.
+            </p>
+            </div>
+            <h1 class="text-formula-title">Celsius to Fahrenheit formula</h1>
+            
+            <p class="text-format">The Fahrenheit temperature range is based on setting the freezing point of water at 32 degrees, 
+            and boiling to 212 degrees. This means that boiling and freezing point are 180 degrees apart. Absolute zero is defined as -459.67°F.
+            </p>
+            <h4>How to convert Celsius to Fahrenheit</h4>
+            <p>The temperature T in degrees Fahrenheit (°F) is equal to the temperature T
+                 in degrees Celsius (°C) times 9/5 plus 32:</p>
+            <h4>
+            T(°F) = T(°C) × 9/5 + 32<br/>
+            or<br/>
+            T(°F) = T(°C) × 1.8 + 32
+            </h4>
+            <br/>
+            <h5>
+            <a>You also can convert the temperature by hand, if you use this formula:</a>
+            </h5>
+             <p>Multiply the <a>Celsius</a> temperature by 9<br/>
+                Divide the answer by 5<br/>
+                Add 32
+            </p>
+            <h4 class="text-formula-title">Example</h4>
+            <p class="text-formula-title">Convert 20 degrees Celsius to degrees Fahrenheit:</p>
+            <h4>T(°F) = 20°C × 9/5 + 32 = 68 °F</h4>
+    
+            <h4>Curiosity</h4>
+            <p>The Fahrenheit scale meets with the Celsius scale at exactly -40 Deg.</p>
+            <h4>-40ºF = -40ºC</h4>
+            <p>A temperature difference of 1 deg C is the equivalent of a temperature difference 1.8°F.</p>
+        </section>
+    
+
+
+
+
+<section class="footer-container">
+    <p>Last updated October 2019</p>
+</section>
+
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" 
+  integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

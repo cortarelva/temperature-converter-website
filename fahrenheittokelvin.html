@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fahrenheit to Kelvin</title>
+  <meta name="description" content="
+  The Kelvin scale fulfills Thomson's requirements as an absolute thermodynamic temperature scale. It uses absolute zero as its null point.
+  Unlike the degree Fahrenheit and degree Celsius, the Kelvin is not referred to or written as a degree.
+  ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+   rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/buttonLinks.css">
+  <link rel="stylesheet" href="css/converter.css">
+  <link rel="stylesheet" href="css/text-formula.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  
+<nav>
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="fahrenheittocelsius.html">Fahrenheit to Celsius</a></li> 
+    <li><a href="celsiustofahrenheit.html">Celsius to Fahrenheit</a></li>
+    <li><a href="kelvintofahrenheit.html">Kelvin to Fahrenheit</a></li>
+    <li><a href="kelvintocelsius.html">Kelvin to Celsius</a></li>
+    <li><a href="celsiustokelvin.html">Celsius to Kelvin</a></li>
+  </ul>
+</nav>
+
+<form class="form-container">
+        <h1 class="form-title">Fahrenheit to Kelvin</h1>
+        <div class="input-container">
+            <p class="input-label">Fahrenheit:</p>
+            <input class="input" id="inputKFahrenheit" type="number"
+            oninput="temperatureConverterFtoK(this.value)" onChange="temperatureConverterFtoK(this.value)" 
+            placeholder="0"></input>
+        </div>
+        <h3 class="output-label">Kelvin: <span id="outputFKelvin"></span> </h3>
+    </form>
+
+    <section class="text-formula-container">
+            <h1 class="text-formula-title">Definition of Kelvin</h1>
+            <div class="text-format">
+            <p>
+            The <a>Kelvin</a> is defined by fixing the numerical value of the Boltzmann constant k to 1.380 649×10−23 J⋅K−1. 
+            This unit is equal to kg⋅m2⋅s−2⋅K−1, where the kilogram, metre and second are defined in terms of the Planck constant, 
+            the speed of light, and the duration of the caesium-133 ground-state hyperfine transition. Thus, this definition 
+            depends only on universal constants, and not on any physical artifacts as practiced previously, such as the IPK, whose mass diverged over time from the original value.<br/>
+            <br/>
+            The Kelvin scale fulfills Thomson's requirements as an absolute thermodynamic temperature scale. It uses absolute zero as its null point.<br/>
+            <br/>
+            Unlike the degree Fahrenheit and degree Celsius, the Kelvin is not referred to or written as a degree. 
+            The kelvin is the primary unit of temperature measurement in the physical sciences, but is often used in conjunction with the degree Celsius, which has the same magnitude.
+            </p>
+            </div>
+            <h1 class="text-formula-title">Fahrenheit to Kelvin formula</h1>
+            
+            <p class="text-format">Fahrenheit and Kelvin are two common temperature scales. The Fahrenheit scale is used in the United States, 
+            while Kelvin is an absolute temperature scale, used worldwide for scientific calculations. While you might think this conversion wouldn't 
+            occur much, it turns out there is a lot of scientific and engineering equipment that uses the Fahrenheit scale.
+            </p>
+            <h4>How to convert Fahrenheit to Kelvin</h4>
+            <p class="text-format">The temperature T in Kelvin (K) is equal to the temperature T 
+            in degrees Fahrenheit (°F) plus 459.67, times 5/9:</p>
+            <h4>
+            T(K) = (T(°F) + 459.67) × 5/9
+            </h4>
+            <h4 class="text-formula-title">Example</h4>
+            <p class="text-formula-title">Convert 60 degrees Fahrenheit to degrees Kelvin:</p>
+            <h4>T(K) = (60°F + 459.67) × 5/9 = 288.71 K</h4>
+        </section>
+
+
+
+
+<section class="footer-container">
+    <p>Last updated October 2019</p>
+</section>
+
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" 
+  integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
