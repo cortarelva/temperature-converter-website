@@ -27,3 +27,20 @@
     -moz-box-shadow: 11px 10px 17px -4px rgba(0,0,0,0.75);
     box-shadow: 11px 10px 17px -4px rgba(0,0,0,0.75);
 }
+
+@media screen and (max-width: 600px){
+    .btn-container{
+        width:350px;
+        margin:20px auto;
+   }
+}
+
+@media screen and (max-width: 320px){
+    .btn-container{
+        width:300px;
+        margin:20px auto;
+   }
+   .btn-container .btn{
+        width:250px;
+    }
+}

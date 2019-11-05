@@ -29,3 +29,18 @@
 .form-title{
     text-align:center;
 }
+@media screen and (max-width: 600px){
+    .form-container{
+        width:350px;
+        margin:20px auto;
+        padding-bottom:10px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .form-container{
+        width:300px;
+        margin:20px auto;
+        padding-bottom:10px;
+    }
+}

@@ -1,15 +1,98 @@
+/*css for desktop nav menu */
 .nav{
-    top:0;
-    width:100%;
-    display:flex;
-    justify-content:space-around;
+    top: 0;
+    width: 100%;
+    position: relative;
     align-items:center;
-    min-height:8vh;
-    background:rgb(208, 210, 211);
-    margin:0 auto;
-    color:white;
+    min-height: 8vh;
+    background: rgb(208, 210, 211);
+    margin: 0 auto;
+    color: white;
 }
-li{
+ 
+.nav li {
     list-style: none;
-    margin:0 2px;
+    margin: 0 auto;
+    display: inline-block;
+    justify-content:space-around;
 }
+
+/*css for mobile Sidenav and menu button */
+
+.sidenav-container {
+    height: 100%;
+    width:0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(49, 101, 131);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .sidenav-list {
+    margin:30% auto;
+    text-align:left;
+    list-style-type:none;
+  }
+  .sidenav-list-item{
+      text-decoration: none;
+  }
+
+ .sidenav-item-a{
+    padding: 15px;
+    margin:15px auto;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;  
+    font-size:1em;
+    font-weight:600;
+    font-family: "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    letter-spacing: 2px;
+    border:1px solid lightslategrey;
+    border-right-style:none;
+    border-radius:15px 0 0 15px;
+}
+
+.menu-button-container{
+    width:90%;
+    height:50px; 
+    font-size:36px;
+    cursor: pointer;
+    margin-left:20px;
+}
+
+   .closebtn{
+    margin-top:35px;
+    margin-right:25px;
+    float:right;
+    font-size: 15px;
+  }
+
+
+  @media screen and (min-width: 801px){
+      .nav li{
+            display:inline-block;
+      }
+      .menu-button-container{
+          display:none;
+      }
+  }
+
+  @media screen and (max-width: 800px){
+      .nav-container{
+          display:none;
+      }
+      .nav{
+          display:none;
+      }
+      .nav li{
+            display:none;
+      }
+      .menu-button-container{
+        display:block;
+      }
+  }

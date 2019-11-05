@@ -35,6 +35,10 @@
 
   <!-- Add your site or application content here -->
   
+<section class="menu-button-container">
+    <span id="menu-button" class="menuButton" onclick="openNav()">&#9776;</span>
+</section>
+
 <nav>
   <ul class="nav">
       <li><a href="index.html">Home</a></li> 
@@ -45,6 +49,20 @@
       <li><a href="celsiustokelvin.html">Celsius to Kelvin</a></li>
   </ul>
 </nav>
+
+<section id="sidenav"  class="sidenav-container">
+    <a id="close-btn" class="closebtn" onclick="closeNav()">close</a>
+      <ul class="sidenav-list">
+        <li class="sidenav-list-item"><a class="sidenav-item-a" href="index.html">Home</a></li> 
+        <li class="sidenav-list-item"><a class="sidenav-item-a" href="fahrenheittocelsius.html">Fahrenheit to Celsius</a></li>
+        <li class="sidenav-list-item"><a class="sidenav-item-a" href="celsiustofahrenheit.html">Celsius to Fahrenheit</a></li>
+        <li class="sidenav-list-item"><a class="sidenav-item-a" href="fahrenheittokelvin.html">Fahrenheit to Kelvin</a></li>
+        <li class="sidenav-list-item"><a class="sidenav-item-a" href="kelvintofahrenheit.html">Kelvin to Fahrenheit</a></li>
+        <li class="sidenav-list-item"><a class="sidenav-item-a" href="kelvintocelsius.html">Kelvin to Celsius</a></li>
+        <li class="sidenav-list-item"><a class="sidenav-item-a" href="celsiustokelvin.html">Celsius to Kelvin</a></li>
+      </ul>
+</section>
+
 
 <form class="form-container">
         <h1 class="form-title">Fahrenheit to Celsius</h1>
@@ -106,6 +124,7 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/sidenav.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" 
