@@ -315,6 +315,8 @@ AddDefaultCharset utf-8
     # RewriteOptions <options>
 
     # (6)
+    RewriteCond %{HTTP_HOST} ^www\.temperatureconversionformula\.netlify\.com$
+    RewriteRule ^/?$ "http\:\/\/temperatureconversionformula\.netlify\.com\/" [R=301,L]
     RewriteCond %{HTTPS} =on
     RewriteRule ^ - [env=proto:https]
     RewriteCond %{HTTPS} !=on
